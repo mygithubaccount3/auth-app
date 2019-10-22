@@ -12,8 +12,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function MouseOverPopover(props) {
-    console.log(props)
+export default function MouseOverPopover() {
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -35,7 +34,7 @@ export default function MouseOverPopover(props) {
                 onMouseEnter={handlePopoverOpen}
                 onMouseLeave={handlePopoverClose}
             >
-                {props.nickname}
+                {JSON.parse(localStorage.getItem("account")).nickname}
             </Typography>
             <Popover
                 id="mouse-over-popover"
@@ -56,7 +55,7 @@ export default function MouseOverPopover(props) {
                 onClose={handlePopoverClose}
                 disableRestoreFocus
             >
-                <Typography>{props.nickname}<br />{props.email}</Typography>
+                <Typography>{JSON.parse(localStorage.getItem("account")).nickname}<br />{JSON.parse(localStorage.getItem("account")).email}</Typography>
             </Popover>
         </div>
     );

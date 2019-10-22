@@ -6,7 +6,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Title from './Title';
 
-export default function UserInfo(props) {
+export default function UserInfo() {
     return (
         <React.Fragment>
             <Title>User info</Title>
@@ -21,9 +21,9 @@ export default function UserInfo(props) {
                 <TableBody>
                     {
                         <TableRow key={1}>
-                            <TableCell>{props.data.email}</TableCell>
-                            <TableCell>{props.data.nickname}</TableCell>
-                            <TableCell>{props.data.password}</TableCell>
+                            <TableCell>{JSON.parse(localStorage.getItem("account")).email}</TableCell>
+                            <TableCell>{JSON.parse(localStorage.getItem("account")).nickname}</TableCell>
+                            <TableCell>{JSON.parse(localStorage.getItem("account")).password}</TableCell>
                         </TableRow>
                     }
                 </TableBody>
