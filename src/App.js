@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter, Route } from 'react-router-dom'
+import Regform from "./Components/Regform";
+import Login from "./Components/Loginform";
+import Dashboard from "./Components/Dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <React.Fragment>
+          <HashRouter>
+              <Route path="/" exact component={Login}/>
+              <Route path="/sign_up" component={Regform} />
+              <Route path="/dashboard" component={Dashboard} />
+          </HashRouter>
+      </React.Fragment>
+
+
   );
 }
 
