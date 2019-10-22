@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/auth-app/build/static/css/main.b95c5719.chunk.css",
+    "main.js": "/auth-app/build/static/js/main.bad39add.chunk.js",
+    "main.js.map": "/auth-app/build/static/js/main.bad39add.chunk.js.map",
+    "runtime-main.js": "/auth-app/build/static/js/runtime-main.c7f6201c.js",
+    "runtime-main.js.map": "/auth-app/build/static/js/runtime-main.c7f6201c.js.map",
+    "static/js/2.654a0c57.chunk.js": "/auth-app/build/static/js/2.654a0c57.chunk.js",
+    "static/js/2.654a0c57.chunk.js.map": "/auth-app/build/static/js/2.654a0c57.chunk.js.map",
+    "index.html": "/auth-app/build/index.html",
+    "precache-manifest.80cf1badd910bb7245af1b28eff881ab.js": "/auth-app/build/precache-manifest.80cf1badd910bb7245af1b28eff881ab.js",
+    "service-worker.js": "/auth-app/build/service-worker.js",
+    "static/css/main.b95c5719.chunk.css.map": "/auth-app/build/static/css/main.b95c5719.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c7f6201c.js",
+    "static/js/2.654a0c57.chunk.js",
+    "static/css/main.b95c5719.chunk.css",
+    "static/js/main.bad39add.chunk.js"
+  ]
+}
