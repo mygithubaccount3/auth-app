@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "60c3d7bfca76e28e08301333af4dd663",
+    "revision": "4138546b7200a1161bbf32ec30164ff7",
     "url": "/auth-app/build/index.html"
   },
   {
-    "revision": "0e770e533d1682c1d982",
+    "revision": "32c75bc32754e48260b7",
     "url": "/auth-app/build/static/css/main.b95c5719.chunk.css"
   },
   {
-    "revision": "8f42bf9a711bcfc5949d",
-    "url": "/auth-app/build/static/js/2.985c3ce2.chunk.js"
+    "revision": "4d133dc60890f5196162",
+    "url": "/auth-app/build/static/js/2.87820397.chunk.js"
   },
   {
-    "revision": "0e770e533d1682c1d982",
-    "url": "/auth-app/build/static/js/main.b15df964.chunk.js"
+    "revision": "32c75bc32754e48260b7",
+    "url": "/auth-app/build/static/js/main.59264009.chunk.js"
   },
   {
     "revision": "2a686e2639a06a4f4819",

@@ -2,7 +2,7 @@
   "name": "auth-app",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://mygithubaccount3.github.io/auth-app/build",
+  "homepage": "https://mygithubaccount3.github.io/auth-app/build",
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "@material-ui/icons": "^4.5.1",

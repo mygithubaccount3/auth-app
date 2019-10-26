@@ -8,8 +8,6 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-
-//import { useStore } from "react-redux";
 import { Link, useHistory } from 'react-router-dom'
 
 const useStyles = makeStyles(theme => ({
@@ -39,26 +37,11 @@ const useStyles = makeStyles(theme => ({
 
 export default function Loginform() {
     const classes = useStyles();
-
-    //const store = useStore().getState();
     let history = useHistory();
 
     function logIn(e) {
         e.preventDefault();
 
-        /*if (Array.isArray(store) && store.length) {
-            store.forEach((el) => {
-                if(el.email === document.getElementById("email").value) {
-                    history.push({pathname: '/dashboard',
-                        state: {
-                            email: el.email,
-                            password: el.password,
-                            nickname: el.nickname}});
-                }
-
-            });
-        }
-        else document.getElementsByClassName("error")[0].innerHTML = "User not found";*/
         if(Array.isArray(JSON.parse(localStorage.getItem("users"))) && JSON.parse(localStorage.getItem("users")).length) {
             JSON.parse(localStorage.getItem("users")).forEach((el) => {
                 if(el.email === document.getElementById("email").value) {

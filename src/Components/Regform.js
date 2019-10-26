@@ -46,7 +46,7 @@ export default function Regform() {
     function registration(e) {
         e.preventDefault();
 
-        users.push({email: document.getElementById("email").value, nickname:document.getElementById("nickname").value,
+        users.push({email: document.getElementById("email").value, nickname: document.getElementById("nickname").value,
                     password: document.getElementById("password").value});
         localStorage.setItem("users", JSON.stringify(users)
         );
@@ -58,8 +58,6 @@ export default function Regform() {
         }));
 
         document.getElementsByClassName("info")[0].innerHTML = "You are registered!";
-        console.log(localStorage)
-
     }
 
     return (
