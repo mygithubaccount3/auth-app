@@ -48,8 +48,12 @@ export default function Regform() {
 
         users.push({email: document.getElementById("email").value, nickname: document.getElementById("nickname").value,
                     password: document.getElementById("password").value});
-        localStorage.setItem("users", JSON.stringify(users)
-        );
+        try {
+            localStorage.setItem("users", JSON.stringify(users));
+        }
+        catch (QUOTA_EXCEEDED_ERR) {
+            alert ("Your local storage is full. Clean it")
+        }
 
         dispatch(register({
             nickname: document.getElementById("nickname").value,
