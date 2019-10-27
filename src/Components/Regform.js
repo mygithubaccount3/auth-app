@@ -51,8 +51,8 @@ export default function Regform() {
         try {
             localStorage.setItem("users", JSON.stringify(users));
         }
-        catch (QUOTA_EXCEEDED_ERR) {
-            alert ("Your local storage is full. Clean it")
+        catch (e) {
+            if (e.number === 22) alert ("Your local storage is full. Clean it")
         }
 
         dispatch(register({
